@@ -76,6 +76,7 @@ Either you can use CLI or you can use IDE (like PyCharm)
 
 - Press the Fork button, to save a copy of this repository on your GitHub account
 - Clone this repository by typing `git clone https://github.com/<GITHUB-USERNAME>/Python-Assistant.git` command in git bash
+- Navigate to project directory using `cd PYTHON-ASSISTANT`, then run `pip install -r requirements.txt` to install required packages. 
 - Create a New branch using `git branch new-branch` and move into the new branch using `git checkout new-branch`
 - Before pushing code to repository makes sure to pull the latest remote repository by `git remote add upstream https://github.com/Umesh-01/Python-Assistant.git` and `git pull upstream main`, and resolve any merge conflict if exists
 

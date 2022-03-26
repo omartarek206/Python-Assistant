@@ -1,0 +1,21 @@
+pyttsx3
+SpeechRecognition
+pipwin
+# pyaudio
+wikipedia
+pywhatkit
+ecapture
+pyjokes
+speedtest-cli
+pywikihow
+pyautogui
+poetpy
+forex-python
+requests
+beautifulsoup4
+wolframalpha
+quote
+winshell
+geopy
+geocoder
+flask
