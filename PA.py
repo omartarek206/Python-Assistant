@@ -12,7 +12,6 @@ import pywhatkit                                   # pip install pywhatkit
 import MyAlarm      
 import ecapture as ec                
 import pyjokes                                     # pip install pyjokes
-from speedtest import Speedtest                    # pip install speedtest-cli
 from pywikihow import search_wikihow               # pip install pywikihow
 import pyautogui                                   # pip install pyAutoGUI
 import poetpy                                      # pip install poetpy
@@ -600,19 +599,6 @@ if __name__ == '__main__':
             print(joke)
             fun_talk(joke)
 
-        elif 'internet speed' in query:
-            st = Speedtest()
-            print("Wait!! I am checking your Internet Speed...")
-            fun_talk("Wait!! I am checking your Internet Speed...")
-            dw_speed = st.download()
-            up_speed = st.upload()
-            dw_speed = dw_speed / 1000000
-            up_speed = up_speed / 1000000
-            print('Your download speed is', round(dw_speed, 3), 'Mbps')
-            print('Your upload speed is', round(up_speed, 3), 'Mbps')
-            fun_talk(f'Your download speed is {round(dw_speed, 3)} Mbps')
-            fun_talk(f'Your upload speed is {round(up_speed, 3)} Mbps')
-
         elif 'send message on whatsapp' in query:
             phno_list = {
                 'Umesh': '+911234567890',
@@ -688,3 +674,7 @@ if __name__ == '__main__':
                 snake_game.game()
             except Exception as e:
                 pass
+
+        else:
+            print("Sorry, I am unable to find the answer for your query.\n Try again.")
+            fun_talk("Sorry, I am unable to find the answer for your query.\n Try again.")
